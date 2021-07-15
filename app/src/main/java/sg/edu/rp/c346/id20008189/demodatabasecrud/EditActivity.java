@@ -22,6 +22,10 @@ public class EditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit);
 
         //initialize the variables with UI here
+        tvID=findViewById(R.id.tvID);
+        etContent=findViewById(R.id.etContent);
+        btnDelete=findViewById(R.id.btnDelete);
+        btnUpdate=findViewById(R.id.btnUpdate);
 
         Intent i = getIntent();
         data = (Note) i.getSerializableExtra("data");

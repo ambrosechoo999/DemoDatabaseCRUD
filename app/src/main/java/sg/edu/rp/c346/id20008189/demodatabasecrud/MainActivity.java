@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     Button btnAdd, btnEdit, btnRetrieve;
-    TextView tvDBContent;
+    TextView tvContent;
     EditText etContent;
     ArrayList<Note> al;
     ListView lv;
@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnAdd=findViewById(R.id.btnAdd);
+        btnEdit=findViewById(R.id.btnEdit);
+        btnRetrieve=findViewById(R.id.btnRetrieve);
+        tvContent=findViewById(R.id.tvContent);
+        etContent=findViewById(R.id.etContent);
+        lv=findViewById(R.id.lv);
 
         //initialize the variables with UI here
 
