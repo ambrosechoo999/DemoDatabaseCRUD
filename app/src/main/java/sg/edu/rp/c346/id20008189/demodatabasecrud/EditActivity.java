@@ -40,6 +40,7 @@ public class EditActivity extends AppCompatActivity {
                 data.setNoteContent(etContent.getText().toString());
                 dbh.updateNote(data);
                 dbh.close();
+                finish();
             }
         });
         btnDelete.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +48,7 @@ public class EditActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DBHelper dbh = new DBHelper(EditActivity.this);
                 dbh.deleteNote(data.getId());
-
+    finish();
             }
         });
 
